@@ -1,150 +1,185 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <!-- saved from url=(0034)http://www.cs.toronto.edu/~rjliao/ -->
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" class="gr__cs_toronto_edu"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<!-- <link rel="shortcut icon" href="data:image/png;base64,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"> -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" class="gr__cs_toronto_edu">
 
-<meta name="keywords" content="Zaixiang Zheng, CS, NLP, Machine Translation, NJU, Nanjing University">
-<meta name="description" content="Zaixiang Zheng&#39;s home page">
-<link rel="stylesheet" href="./res/jemdoc.css" type="text/css">
-<title>Zaixiang Zheng</title>
-<script async="" src="./res/analytics.js"></script><script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-99569700-1', 'auto');
-  ga('send', 'pageview');
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- <link rel="shortcut icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAdX0lEQVR4Xq17aZAd13ndube312+bHcDMYLCDoLiTpkiGpFWKZKcsKrQlSlRFkpVSVIorseLE5Vjlcio2K4lSKSt/lEryw4wc21LZkWwmkRNLshKLspbIlghSIMUFAAkCwsIZDGZ/S+99U+e73cAABggY0EMNZnnv9ev73fOd73zLVR5glAIABfvdQCtAKwVlAOUCLp/V9u+e0nA1v4ACCnyTMSUyA5TGwBhe0MBxHbjawNcKBkAp/wOGryk1srJAw9UYazroDzJEqcEgMbhv7yQWN2IsLgygSoPIdZE69vVZYVCW/AB7Lblr+fwLv59/4qIfZGH1O6rvfI+Bqu7PXgyAw8XzOyojOEZ+VxrQGvCVhtZaDFTSSLSaKpGbEmVpjcALua4D36neB2sEWbzhIoAyLxEGGhMtH2u9FMO0RJICj9w5i6NnVjD/xgDKaAy0QuRpGBgkeYG8sNf5mxng8maRNV9kAGNX73AN3EVHQSu781wnF93QCkprKIc3ZRdIw9EApjQoqpsTA7glPE0kuGKYgsuonk/jDK2Giy0jAVY2IgwHQGZK/L379uH51+Zx8nSfUMI6FAa+hkKBvNSIs7K6hrnG3b8CJirkKFfBlIJNZfdJFmt/drmT3HHCASUcreA6RIASAxAZFoZ0B4OMF+L2Agg8IPRduNoRYwpU+TRdpSiRZgXaTY2pkRDLaxF6GyWagYvH7pnBwVfP4cyJPp0SSzAY+A6SEsiLAqZUKGnsypBXc4ErPV//vd5IuTB9onJr2VVfXEILD2iUAn36v3aVuIM1lIYxBfj2wuJcrtPwNdpBA65DJGlBAG9ciZsAcZpjZCTA1m4DC8t9rG0YjLd8PP7ADnznxQXMH12DWxY4pQ2GvoeY6CIH5LxOdS1LWn/NJeq/iXu+ycNxHCjHEQ6DIfyFFCykhQcq2DskQHKA0YICx1NCckQC8SPEpMkJBihK2fGw4WOk6cFzAU97yIsSRYWOojSI0wwzW9vY1m3i2Jk1rKwn2DrSwgce2oPvHDyFky8tI0CB17RGFFgDZEUhBqivQxRcusOyKRW86+evZAN5XlcGoAuQ9mujEfU0gKMUHCFC+iHdwIHn1yggrAlJ8gR/0ihKxgaD0XYTY50AnmeEEGmkLLfQzbIUSVbg5j0TmGiHOHJsCfMrKXZv6eJ9P7kbLx5exMG/OIHRvMQhDUSeg7gAYlPI9WlHIvZKBnjTbb/kydo1LwqD/CMpzhqBfl9FBCJCazgO4Lg0DP3bRgH+nTxRFo6gZGLEw9RYKEjQhqYrURSlLDxJS2RFigfvnkXLbeClw2fw6nwft+zchve98wDOzQ/w1Befhb8a43ldIg8DpEWJqMyR5bmQlqBOsHplF7D89OZuoBylzkcV8QLqgCoS2Piv4NESlTuQA8icYgTHugFJksig+/DmPMfB1FiArRNttEMHITmgKJAbIElKREmGrMzw7nfuQ5k6eOWVMzh4dBm37tuJD7737YgHK/j8f/hzxMdXcNDJkYQe8tIgzQsJhVw7+aBirYsIsd7gzST5ZohQTqUjaCjyNy/Khbji1goOYz8XxnBIY5AUPZIHDaPhutZIrutCk1BKwHcUZifbmNvWwUjbQ9O3qEkSg94gRW+YQDsGH3n/XTh9so8TJxfxjYOnsW/XHD7+838XeRHjjz7zJZx+7iSeMRmydoi0oAEyxDRAQQTZZVEfVBrrqrt9OUNwLRcQYOOAGMGr4E84+7qEcWgMJWFR+YztDjxPQbsMkwq+78J3PAmDNMDumVHsmGljZqqFZsuT18TDAhu9CPNn+2h2HPzDv/8Qnvnuq3jtxAqe/v5J/PRDd+GR97wLgcrx1L//bzj8jVfwPadE2mminxdI8xxxljEeIjf2xuuva4H7ZQ3Q4KYxNltz1lyIQDhRQXtkcYofK4x8R8PxHASuB9d3BA1ERquh4bseTAE0XIX9uyaxb+cIdsx00Ok2ZXeGUYGllR6On15FEHi4/+7tOPSDk/jWD04hgMEjD92Jh3/2cQRuiqf+3ZM4+ucv47tGIWp56BU0QCEGMGVpFSHJcBMHXM3fL2uA0CUHMK7aEC5yAECL8CetaYPA0xIdHFcjcDWagQc/cNAIfSgiwACdVoAgCGSXGh5w203bcMveKRy4aRqjI104noeV1T5OnVnEweePY2M9RxlMYHrnNI688ipOnHgDf/uevfjwR/8RWm2DZ77wv/D1z/wJvlmWiFoBNsoCaZojylMhUxRUn9QeF9TldRmg5StTFjUCKkOo2gBGMiFfYA54roPQd9AMfbSaHtrNBrRHiaTQ7YRoNn0M+zECT+H+u3bhtltmsf+mHWi2Ozi7uI6jR0/jxKlzWDi1AuO38Oj7PoYIAQ6eOINvHXwdtzVW8bN/537smB3B8uGX8Mef+M/4SpFhtRNiGGUo8gxJniPPCzGCkCERIBHh6ox/WQR0mzQAVdamJMsoNB2rBEvHiAFcjxB30QgddDoBRlsNjHaa8DsBClVgtNlGq+1ibTWDq0q84+EDuP32PUhTg4PPvYaFxXUM4wxvufMhPPPMMew4cC/233kHOtvm8GevZ3jmhVMYPfF/8NG3TWPbrI+ZThNPvv838aXeEIstH0mSIU9zpHQBY5CXzA0q1N6IAcZbymSUmXmtBq2cbSkNj6qQBqDyo/8HPlqtAGMjIUa7IcbH2mh2mFC7Io6aRIgDTE12BPJrvQQRPMRFB1Exii1z+3HvPffi5lvvQtBwEYQO0tzg959fw//93jwO/cG/wEff2sAnfukfoBPk+NQjv4KvnVvHcuAiSRLkGXOIDAX5oMgZsAUJdXJ4XS4wFipJhuhWIi5Kmwgx6wsoepjReXQBhrLK98n4gYuw1bRuoIFQA+PdBlzfx9JairFtu2CaUyhGZ/HWO+7FzOwsdu3ehqluF+1WQ8JraRRO9gb45JcW8PTv/le8pfg2PvJgF4//4r9E21/Hv3n81/DVE/NY0RppnCJJKYRoAJJggYIyfBNyr8sAbV8bSlkWHyQEUmICksSEHtBwPIkAhWMTH01k+HQJD51WA9AulPbgabrHCDpTMxid3oM7Hnwb5uZ24fabt2N6rIl2oylS2wZZW0CJ8gK/c2gDT/7uX6J96gu4s3kcj9w9g3f9wr8F0lP41Id/BV8+uYr1okA0iFBkOfIsR1rmFzLDsiqSXC8HzHV8I5YkmxaAuINSCMn2lMBEh1JIJeQwDVayeO2EcMM2OuMzmJrZjf37duPue+/Brr27MDu9DRMj5Ii21BLsVbh0m8UV0Di6nOBzzy7h8KvzCE9+E3s3nka0dBYP3j6ORz/5X5ANzuJfPfZxfHWxjziJEScZkjQTKZwVmRChkLfwwA2Q4O6Oa5idMaTwMv3EYEg1p4FR3940ZSjXQF0/NtJF0B1FY8tOFP4evPfRn8IHHns7wkYbDd8RVwkqtBhVolQONPN3ReNqfP9ciq+8vIKljSG29ldxYOwc4h/8KY699H2sbvRw164mPv5bf4gsSvGxx38eL833MIgiS4CpjQJpFQqZEEk0uBES3DrSFBegzFRVOGRqTL+m1KUIotoT/5JEyMBrj0E3t0OPPYxf/qcfxEd+7nbJFimX6ShxlqOXkqgIc43TgxIvn03w4rkEi4vr2Nky2IUz2OGdRnHuZRx/8RmcOLEAJH3snQzwq7/9x1jdMPjwBz+CN84NEMUZojhCThTk3P1M0mupCwgKbgAB3dCRMMgHoS6ChxygGPaY5Bh4XLinhbzGRxpwwjZyp4uJfT+Hje7deOCBAyKVC+0gLbUgKDIsILSQmxzzC4tQgwhbgw385C3j2DnSQ//YdzDWSrC+dApf/vJfwSQ5VJ5itq3xm7/3RRw50cc/+cQvYaOXSqTob/QxiIZIGAVKpsU2u/yxGECsWbLgYXeQRvAY/gImOAae44kCbIUeRkcbCFstGN3BbQ8/goPHHXS27EbQGAH8FsLQR9B0MTE2iq5XQqcppjoaD//EFkw2FU4cfRaHn/0aulMG+/dP4D99+n9gfS1C3M/R9B1sCQo88Xufx/cOLeA3fuNfI4pzlHmGpbUBhnGEUmSwJUH6bM4K0Y0gYCTUwgGlFBhsTGUtMGDi02DSA3ieh2bDQyPU4ueNwIcXtNCZmMIH3vcoJme2oVA+kkwhS1LYwGoQOgaqGCCJe0jjDfSW57Gxtoo46mPn9g6SPMVX/uywLGCwHsH3PMyFwBNP/jb+99Mv4MnPfgG9QQ9pZrA+HCKNE+SblCBRwPfWBtis9K41JKrxkEqeFVlrABqWSGBcd0NHavfN0EW77SNs+nBZJmIVSAUo8wKjYx202m2MdH10Oz62jHgikjrNNlyffQGWv3LEwwQr6+s4emIeQRlgdjuwsFDg8NEl5AUjkEZZ5tjTcfDrn/k0nvraD/G5p76KIokwGMYYpjmKPBdBROinWS5okPylQsB1GWCsYQsieVXPpCtQExABXggElL9NFw0mP4EnZEjRxAdrA+PdAKPtQDRBq8nvzBVctCmTtUbGfD4H0jjG0lqC5eUV5Dlwz4FRfP+lZaz3cvQGMQLHQxQluKkT4Jd/7RN46i+P40+/dQjRYANJkmIQpxIFhADzQsKhIOCSPkFthGtGQMsTdSKl2oI1TsYrQxcwaDRsCdwV4aOkvm+LjqwOKwSei27ooR16aIUOgkChEwbiJh7dh7U09gOYa2QFzixuIEtj6Rgd2NHFt19cQp5BcoTRZgNraxFu6oZ45L778YLbwjdeOI7exiqSOEUcp4jiFFme2OoSlaCQ4OU7Q9dsgNBh1m9tQC1QF1jY1WFaS0asix5SIaI4kiqRi8D3EFISBy4avkKTX0EgrwkC19YN5RIOeoMI80sbojAnKQq1g9cXMwyHrPWXGAk9rK4luG/HdvytuVl8txHi0JEFrPfWkCWZ7H6cJkjTVAzA3Sdyi00keF0uEGpt6PtCW7YtIP9Rqzd8myZLwbNqbrBI6rm2PM7vTbqG7yLwHPs7i6CqlKYIDcvXMXStDRIkaQFPl9g6pnFmscBGRIZ34LBZAI00KfH22R147NEH8B9/cBwnTi4hTiJkWY7+YICMlSDmAjm5itVhS4A3xAENbXMB/pPboCIkASrWAZQVN1L5pXWYC1S6gJJYa9l9Lp5oEQP4HlzXgMsv2XczRqC7Nkjhs1ukS2mInHwjwyBibTBAQ+UYpA66cPHT7S7e/asfwhP//ZtYWu0jixPJAPv9vlSE8iy1vUXRAXSDCwWR60KArxi0jEjV8wRS9QQ8WmFzB7bqG0hxlNkh64VMgaVWAAQ++4FaskcaR8g1LzAcZhgmRFmGsaaLOC2wFlnIuYZptMFSBNw5sRX3lQl2fuCn8Nlvv4L+YIg8yxAnCXoMg1mJnDJYYM8Q+GMIg4FWJhcBdKEgWm22dHXqB1FRv4p2oYuw/G3lMlthrvT2tFPCZXGUDXGjkOclBsNMSmXMJ1qei42YJGbgmBItdn6NwtzWPfAX5vGO8Q5WH7wNXz96FtFgiCRNJRkaRgmShOkwkyC6Ql4VRC8fBq81Gih+fhXV6tagvFdmATYbgGXzykq2X0Aj2EhAgzBMNlkltumflKsIq2GSy46z7tZgkuRorA0LUZuhozARKhi/g3C9wHSS4r6d43hhzy6cXB5iOBwiFgMkGA4jpEWBLCuRVUUR+r7MI7zJfMDVosH55uhm/2EkkM5wZQA79GB7f4wZDrFAWhAXIPwJe6DlMExazqBR2Qrrx5StpRh0LPDRSzP0M2oIg8nQwWjYwJaZXeg99xKmvBB3374LTzc7GG70EBH2RYlBkgiPMApIPTBne42lMcsxN2QAFrRks6ped91YdIXtq6GGyj2IAOmUVw9Ha+kBSL2QJTOSp2Ynn75fIilLJDmNZhA4jtQYe/x7USJUCjNtD9PTM9C0yPEFtDsNbLvrJhwqNZKNdYn/UZJKVrk26INJGytCLI3VRHg1A9QcdtEGb/rl/HzARS00YxujtQtUaJZdrQ1AnmDbm0RJveOJAYgNzgnYNJVDE2Rpmpg1Al5nmDnYNTuGmRaryA3sv/1WfO93/gSJAqbGOhi7dR+OpyXifg/DQV9C51A6QqUYREpi7BBvYv+rjci8mRucnxC5tIdIQJDZ62EU7j6hIqlApResAWgIhkaWxmyzoh6CEG1RkjoNXMfBICvgOz7eddM07nvH25C0G/j9T38OO+Icz5YFHtg6Cdy8G0txjIQEGA0xGMSICxqhRJayJM4vy/71wm/IAPWEiE1xqk4Ld5osL/MzlmhkcKIiR4sgWym2BuAoDYeq2Cq3TTs7GEXmLKXDzJ+jVGMy8PGx99yPBx55AE986gtQR05hpcgRFQpv3zmFs3NzWI+HSCOWwTP0IhZEEiSlETRkWSzoEmRVd3w5A2yeG3hzBIjEs61w3rXsNAsilT9TCHFNQnoCk3qGoDaArR7VyLCSyt5bQYOUpWiCKGGHycP+sSae+Oc/g4OnIvzBZ7+OTq+Po0bhNl/h1m1bcWx6Gv2IuX+KhOlvxvCXSgGVrXWSHxGwmfhvzAAUe6x2VTVByYUMtb5dIPUhLS6TI9Xs0HkS9OwoHJFi/cK+mcJKiuvM1FzH3nAGdJoajz28Fx/6xffj4//sc0hfP4NlluOg8N5WE95kF6/PzmK9N5DqT8bJsWFP1B9LYUlG9rcSePOir2SAKxHfRYqRKK8NwDVwvoOhjIsSA0iR5ILjy1plVsBmig6FDzvG1WwB1Y6gph7nY/k7K6WZun2siV//x+/Etw6v4Y/+8C/gwmC1MJh1Nd4dNLEyPYkfTY6KRI6GkeT+NESZsixWigiiDiCqBLCXGZG5aHFXGY4QoNZjclIWoctyWkxzQsyOyNVhRKxcDUnIIOQlBqjZQ2YEwHE5qxyzJEdhNCZCD++6bztuu+UAfuvz34HZGEpUSQrglkDjJzKNo9MTWNo6jiRiGTxBnnKWIEbKn3OWwoiAWgFecm+X2e6riSBZm2TsFcFxG6U2KAawavCiRz1BKoNU1vfltZwaYebnaLEoU1X27WQaLCkQOi7u2r8V7/mZt+KL//ObOHi8hw/NbsXNRY6nFlYww3kCKDzbaWNjehJZkogCJAkOqzKYFENznDdAfV+XDkldtGHVi96UBDnvKNpfqsJWvjqyw9YFJFGuRkcqDpS/E+pKczbIcgOLpqwg88E+QglHCpqmdDDWcvHgPXvQX1jC8z9aR9MJ8Mkdk9ISH+TAfF5gRCs8r1wM5rahMCS8FMMhU+hUZDSnyiiELAFeXAa/1jB4uQaKlcK272EjQGnVnIzIcWS0HnOVVqSVnnanreQlX/D1HJxwFadBS4F8lHG0laU1B2/ZvQ06S7G2GuH11Qi/cPMujPxoAaeSGAPtIimlM4vXSoV0bhsMB6PSFBF9P2HKW8hgJStAthl6YwbYrA4vMoAtCHEMhnmAnRmUyUwJfewM2ofsuvxiZ4jYRZbegbIRIGFvIBY6xeyWUWybHMHpY2ewlBhsbTbx/jDA0aU1DAxdpURTa/SMweHCoM8qDA3Mz3G0ZJGGSZB0sGsBVCuNax2W/usEUbuF8m20sourdIAthdvdLUumqzYRPq8FqrE4qRcyFzCUwnye3RoHvSQXDtg2MYoDe2Zx5IfHMMxz9DLgnaMTGN1Yw7EkF2MZbTCpFM4aFz8sUsRVyimwrLiJG8LBbG6QFUAXHpfjgGsKf1WEUEyG5DMJeVaEmfA49Gl+KJuZHCJi+mpDIctjdcYnSOEghbY1AXJInCkMkkKmSeamtyDprcpsUJprjDY7uN0UmF/bQM9wuljDMwazWuFHBjjCMZh6XmnTKrwqE7Whb9Mgh9yTDdVXe1xqqPMI8Pj+Sv3xcsyAuZuSCbIEztJWZfV64YwOMjAhCpDGspyRsvgZs4kJjLY8bJlsYXmhj/HAwRu9HK1SYc7ROB5nUMgRKI2uUpgE8FxRYEVpcYmL99h+hqCxrllWiKVTckxCRvSv8rgSUlRQT4vLfC3PA9ihKE6FZBxFqS5eq0HqAy6ejC+vdVypG1CdDQ3QG+SSE+yc6WI4iBGlJe6cGMXzp3u41QNeGcbISgcOCoywDQ+Drtb4fwydRp0ft9+8HjKC5ReLVJEkdjxZUu/L9EWuZo/z88QqqOYEbc5mEHBCzAd8n/O5dpBB7CvhkZNilvQCsBhiJ8cYEeIM2EjYsTHoNH2MBAppBuybbCFMgcOnN9DjsCMtSZQZgzHWE5h1GuCQKUUSS35/ye07FTEXVJiXPEf4XgsCaua/NGSqlrYkyGyNT/oK6DYUGp7CoFBSkTEyFW6kiuN4rgxONpkKe5DJce7+2lBhfUjfd9FteVAZC6Ah9o03EJgmvn7kBJLM5sscvOqWGiM8dlNVY48QAZXi3nyT4pZybsHudjUget4MVK5X0wH1iy8rmkY9ZQh1mRECR2I0xkNygBLWpgYn1qziUwgcjZGGg2bDoGQ7PAP6gxxLA54Z4GyRI6P0LU9h75au7PJfnVzHaj8Rd2LWydm+XdpBqDVOFgUaMHiDo38VF12U6gEIZWrdQl3OKVWuwNefP6ZzVdBXb7vkjIEa95RJK2DxYoT19lFfpr0WB6VUYghz3yE3OOhwQIqMX2hEaY5eYrCeZDL2UqrCzg9rjb1bRzHR8PHamXUspUYgvxpFknV6CtjneljMC2zIqD2wXk99CgouAJ3326nOMUmpbZMPlJpTJ9fuArUb2GhSiamJpmtYvJTpS0JNA7PjIdoNH4trfaQlR2E1lMwQlKIGGf+HbFHJaS4qP+sGRBA7RbNjIboNF3Fk8OL8AHfsmML8ah8r60PpGk1qB9NK4WVOe/EMgFCMEoSI4tjEAzTAOA9nSEeWpKyQVU0cui3jCWec/iaPi4olzao5KgehrInk8tIxrG6o7gZbYWyft5ViW/KyLGwLJVu6AWa6HG9XOLGcYMrzMMowuD7Aal6gBQf7XS0R4xjr+8w2JLxZxSmPCupiDlaTHQeOnYYSCcrXMfxlzCavEDmu1SA2/an9QqSXLX3bh60F1P3CujVCBEhjsp7MqCII3+F7DkZarmh4zhw9NDeO506ek4ZpL3Mw5QD7tYvvpikSyRuqEf0q56irkPR1coUYlYTLVLg+fyj6hCm3wkDc4uo64EoGUVora4AKRkxnz8/fs5gpDRDbHJXDEURBNaMrR+FoLFZolZbkh0bTiidJStw21cXC8hCxyYT8Qu1jJw9BlcBhJjc215RryoGTOr6zpyDwtnCYo9IsbZhk9VjqDeIpGn0ewbkRAzjSHb5wWKomCDoEZS6THdlxO5hu02CBZg19yHTHSLMlfnx2vS8G2tJU2D3RxrNv9OTmeV6AwmefE+CHSYwNacTaHEM+swqB9sAmzwfZoS2CbFoDHR60IuRlOsUe0yMfDJRNv6/3wWKWtd8m6NdHZwLuviQ5rJtVJe+SJW5bNeLfiY4sN9gWeNjabAGdEIfPLOMt4y0cXtnAIMoE45wm2a0UIq1xihNhTKPF5SyJVWe2JN4TkAMZhbcVqimtMEahpICochXyQFEq9JSdcbzexyYDVJOs9ZV4g1UTtM7KZB6HvQGiQlpjjBo2Sb5jugPHDYT9e3GB1xc3sDpMEOc8fmMQKge7fY3jnBeq2msEVEbCrWI88xBem+vpS1gk4QGjAMbobpJvXJC/zBAZRm+MA84j4BIDUPhUlfe64VkfrKiP0vLGXVeh5TjYu32LsPTx+WXxX13k6LOdXVipO60dxI7CYpbBF23P+SE77Mj8gjvqVTFGyK12ARi0YNCufaWiKBZdGAb7bLr/WFxgE4Ys69tD0/JFxzxPfNXZYsmfeUAKkhCxPKYKg3YzxDBNBB69IU0BtI010kKegaktDUBdz9SXwkg4mIiTypQSsmOYFF3AkT1QoldhsjrMZdlTIbpRBNhD8hce5+ug9TAEP9AGAZGh9sWVitIKDdYDyAlVKTyEg5HAx1Kaoj/MxY06rA+CCzZoVmwvJEYXqxZCh7fIUkJ2lgPs51AGEyVEWF2X5DN8f+2W18sB/x+qmOxsxXfABAAAAABJRU5ErkJggg=="> -->
 
-</script>
+    <meta name="keywords" content="Zaixiang Zheng, CS, NLP, Machine Translation, NJU, Nanjing University">
+    <meta name="description" content="Zaixiang Zheng&#39;s home page">
+    <link rel="stylesheet" href="./res/jemdoc.css" type="text/css">
+    <title>Zaixiang Zheng</title>
+    <script async="" src="./res/analytics.js"></script>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-99569700-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
 </head>
+
 <body data-gr-c-s-loaded="true">
 
-<div id="layout-content" style="margin-top:25px">
+    <div id="layout-content" style="margin-top:25px">
 
-<table>
-	<tbody>
-		<tr>
-			<td width="670">
-				<div id="toptitle">
-					<h1>Zaixiang Zheng &nbsp; </h1><h1>
-				</h1>
+        <table>
+            <tbody>
+                <tr>
+                    <td width="670">
+                        <div id="toptitle">
+                            <h1>Zaixiang Zheng &nbsp; </h1>
+                            <h1>
+                            </h1>
 
-				<h4>Research Scientist <br> ByteDance AI Lab</h4>
+                            <h4>Research Scientist <br> ByteDance AI Lab</h4>
 
-              <p>
-              Email: zhengzaixiang at bytedance.com  <br> or zhengzx.142857 at gmail.com
-              </p>
-      </td>
-			<td>
-          <img src="res/my_avatar.jpg" border="0" width="240"><br>
-      </td>
-		</tr>
-	</tbody> 
-</table>
+                            <p>
+                                Email: zhengzaixiang at bytedance.com <br> or zhengzx.142857 at gmail.com
+                            </p>
+                    </td>
+                    <td>
+                        <img src="res/my_avatar_2.jpg" border="0" width="240"><br>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
 
-<!-- <h2></h2>
+        <!-- <h2></h2>
 <p>
   <i>"There is nothing as practical as a good theory."</i> - Kurt Lewin<br>
   <i>"The test of all knowledge is experiment."</i> - Richard Feynman
 </p> -->
 
 
-<h2>About Me</h2>
-<p>
-    I am now a research scientist at ByteDance AI Lab. 
-</p>
-<p>
-    I have broad research interests in deep generative modeling and its applications in various domains, especially in language translation/generation and de novo protein design. 
-</p>
-<p> We are looking for highly-motivated interns from CS/ML background. Feel free to contact me if you are interested!</p>
-<p>
-    Before joining ByteDance, I completed my PhD in computer science at <a href="http://nlp.nju.edu.cn/">NJUNLP group</a>, Nanjing University from Sep. 2016 to June 2021, adviced by Prof. <a href="https://cs.nju.edu.cn/chenjiajun/index_en.htm">Jiajun Chen</a> and Prof. <a href="http://nlp.nju.edu.cn/huangsj/">Shujian Huang</a>. 
-    During my PhD, I also spent time at University of Edinburgh working with Dr. <a href="http://homepages.inf.ed.ac.uk/abmayne/">Alexandra Birch</a> (09/2019-08/2020); and MLNLC group, ByteDance AI Lab  working as a research intern with Dr. <a href="https://zhouh.github.io/"> Hao Zhou</a> and Dr. <a href="https://lileicc.github.io/">Lei Li</a> (09/2020-06/2021).
-</p>
+        <h2>About Me</h2>
+        <p>
+            I am now a research scientist at ByteDance AI Lab.
+        </p>
+        <p>
+            My general research interest lies in <b>deep probabilistic/generative modeling</b> and its applications in
+            various real-world problems, especially in <b>natural language</b> (<em>e.g., translation/NLG</em>) and
+            <b>computational biology</b> (<em>e.g., de novo protein design</em>).
+        </p>
+
+        <p>
+            Before joining ByteDance, I completed my five-year PhD program in computer science at <a
+                href="http://nlp.nju.edu.cn/">NJUNLP group</a>, Nanjing University (09/2016-06/2021), adviced by Prof.
+            <a href="https://cs.nju.edu.cn/chenjiajun/index_en.htm">Jiajun Chen</a> and Prof. <a
+                href="http://nlp.nju.edu.cn/huangsj/">Shujian Huang</a>.
+            During my PhD, I spent time at ILCC, University of Edinburgh working with Dr. <a
+                href="http://homepages.inf.ed.ac.uk/abmayne/">Alexandra Birch</a> (09/2019-08/2020). I also interned at
+            MLNLC group, ByteDance AI Lab working as a research intern with Dr. <a href="https://zhouh.github.io/"> Hao
+                Zhou</a> and Dr. <a href="https://lileicc.github.io/">Lei Li</a> (09/2020-06/2021).
+        </p>
+
+        <p style="color:rgb(162, 0, 255);"> [Hiring!] We are looking for highly-motivated interns from CS/ML background.
+            Feel free to DM me if you are interested in!</p>
+
+        <h2>News</h2>
+
+        <ul>
+            <li> July 2022: our L<small>A</small>FT paper about cross-lingual trasfer for text generation received the
+                best short-paper award by INLG! </li>
+            <li> Oct 2021: our REDER about reversible machine translation was accpeted to NeurIPS 2021! </li>
+            <li> July 2021: I joined ByteDance AI Lab! </li>
+            <li> June 2021: Finally, passed my viva and reveived my PhD degree! </li>
+            <li> Aug. 2020: I am looking for a full-time research scientist position in the industry.</li>
+
+        </ul>
 
 
+        <h2>Selected Publications </h2>
+        <a href="https://scholar.google.com/citations?user=JPSrehMAAAAJ&hl=en"> [Google Scholar]</a> |
+        [<b>*</b>: equal contributions] |
+        [<b><sup>#</sup></b>: interns/students mentored by me]
 
-<h2>News</h2>
-<ul>
-    <li> Oct 2021: our REDER about reversible machine translation was accpeted to NeurIPS 2021! </li>
-    <li> July 2021: I joined ByteDance AI Lab! </li>
-    <!-- <li> Aug. 2020: I am looking for a full-time research scientist position in the industry. Here is my <a href="./archive/CV_zaixiang_zheng_nlp.pdf">CV</a>.</li> -->
+        <ul>
+            <li>
+                <b>L<small>A</small>FT: Cross-lingual Transfer for Text Generation by Language-Agnostic Finetuning</b>,
+                <br>
+                Xianze Wu<sup>#</sup>, <u>Zaixiang Zheng</u>, Hao Zhou, Yong Yu <br>
+                <em> International Natural Language Generation Conference (<b>INLG</b>)</em>, 2022 (<b
+                    style="color:red;">best short-paper award</b>) <br>
+                <p style="margin-top:3px">
+                    [<a href="https://inlgmeeting.github.io/poster_paper25.html">PDF/Code</a>]
+                </p>
+            </li>
+            <li>
+                <b>Duplex Sequence-to-Sequence Learning for Reversible Machine Translation</b>, <br>
+                <u>Zaixiang Zheng</u>, Hao Zhou, Shujian Huang, Jiajun Chen, Jingjing Xu, Lei Li <br>
+                <em>Neural Information Processing Systems (<b>NeurIPS</b>)</em>, 2021 <br>
+                <p style="margin-top:3px">
+                    [<a
+                        href="https://proceedings.neurips.cc/paper/2021/file/afecc60f82be41c1b52f6705ec69e0f1-Paper.pdf">PDF</a>]
+                    [<a href="https://github.com/zhengzx-nlp/REDER">Code</a>]
+                </p>
+            </li>
 
-</ul>
+            <li>
+                <b>Vocabulary learning via optimal transport for neural machine translation</b>, <br>
+                Jingjing Xu, Hao Zhou, Chun Gan, <u>Zaixiang Zheng</u>, Lei Li<br>
+                <em>Association for Computational Linguistics (<b>ACL</b>)</em>, 2021 (<b style="color:red;">best paper
+                    award</b>) <br>
+                <p style="margin-top:3px">
+                    [<a href="https://aclanthology.org/2021.acl-long.571/">PDF</a>]
+                    [<a href=" https://github. com/Jingjing-NLP/VOLT">Code</a>]
+                </p>
+            </li>
 
-<h2>Selected Publications</h2>
-  <b>*</b> below indicates equal contributions.
+            <li>
+                <b>Improving Self Attention Networks with Sequential Relations</b>, <br>
+                <u>Zaixiang Zheng</u>, Shujian Huang, Rongxiang Weng, Xin-Yu Dai, Jiajun Chen<br>
+                <em>IEEE Transactions on Audio, Speech and Language Processing (<b>TASLP</b>)</em>, 2020 <br>
+                <p style="margin-top:3px">
+                    [PDF]
+                </p>
+            </li>
+            <li>
+                <b>Toward Making the Most of Context in Neural Machine Translation</b>, <br>
+                <u>Zaixiang Zheng</u>, Xiang Yue, Shujian Huang, Jiajun Chen, Alexandra Birch<br>
+                <em>International Joint Conference on Artificial Intelligence (<b>IJCAI</b>) </em>, 2020 <br>
+                <p style="margin-top:3px">
+                    [<a href="https://arxiv.org/pdf/2002.07982.pdf">PDF</a>]
+                </p>
+            </li>
+            <li>
+                <b>Mirror-Generative Neural Machine Translation</b>, <br>
+                <u>Zaixiang Zheng</u>, Hao Zhou, Shujian Huang, Lei Li, Xin-Yu Dai, Jiajun Chen<br>
+                <em>International Conference on Learning Representations (<b>ICLR</b>)</em>, 2020 (oral) <br>
+                <p style="margin-top:3px">
+                    [<a href="https://openreview.net/forum?id=HkxQRTNYPH">PDF</a>]
+                    [<a href="https://github.com/zhengzx-nlp/MGNMT">Code</a>]
+                </p>
+            </li>
+            <li>
+                <b>Dynamic Past and Future for Neural Machine Translation</b>, <br>
+                <u>Zaixiang Zheng</u>, Zhaopeng Tu, Shujian Huang, Xin-Yu Dai, Jiajun Chen<br>
+                <em>Empirical Methods in Natural Language Processing</em> (<b>EMNLP</b>), 2019<br>
+                <p style="margin-top:3px">
+                    [<a href="./archive/emnlp2019-dynamic-CR-v1.pdf">PDF</a>]
+                    [<a href="https://github.com/zhengzx-nlp/dynamic-nmt">Code</a>]
+                </p>
+            </li>
+            <li>
+                <b>Modeling Past and Future for Neural Machine Translation</b>, <br>
+                <u>Zaixiang Zheng*</u>, Hao Zhou*, Shujian Huang, Lili Mou, Xin-Yu Dai, Jiajun Chen, Zhaopeng Tu<br>
+                <em>Transactions of the Association of Computational Linguistics</em> (<b>TACL</b>), 2018 <br>
+                <p style="margin-top:3px">
+                    [<a href="https://www.mitpressjournals.org/doi/pdf/10.1162/tacl_a_00011">PDF</a>]
+                    [<a href="https://github.com/zhengzx-nlp/past-and-future-nmt">Code</a>]
+                </p>
+            </li>
 
-<ul>
-<li>
-    <b>Duplex Sequence-to-Sequence Learning for Reversible Machine Translation</b>, <br>
-    <u>Zaixiang Zheng</u>, Hao Zhou, Shujian Huang, Jiajun Chen, Jingjing Xu, Lei Li, <br>
-    <em>Neural Information Processing Systems (<b>NeurIPS</b>)</em>, 2021  <br>
-    <p style="margin-top:3px">
-        [<a href="https://proceedings.neurips.cc/paper/2021/file/afecc60f82be41c1b52f6705ec69e0f1-Paper.pdf">PDF</a>]
-        [<a href="https://github.com/zhengzx-nlp/REDER">Code</a>]
-    </p>  
-</li>
-
-<li>
-    <b>Vocabulary learning via optimal transport for neural machine translation</b>, <br>
-    Jingjing Xu, Hao Zhou, Chun Gan, <u>Zaixiang Zheng</u>, Lei Li<br>
-    <em>Annual Meeting of the Association for Computational Linguistics (<b>ACL</b>)</em>, 2021 (best paper award) <br>
-    <p style="margin-top:3px">
-        [<a href="https://aclanthology.org/2021.acl-long.571/">PDF</a>]
-        [<a href=" https://github. com/Jingjing-NLP/VOLT">Code</a>]
-    </p>  
-</li>
-
-
-  <li>
-    <b>Improving Self Attention Networks with Sequential Relations</b>, <br>
-    <u>Zaixiang Zheng</u>, Shujian Huang, Rongxiang Weng, Xin-Yu Dai, Jiajun Chen<br>
-    <em>IEEE Transactions on Audio, Speech and Language Processing (<b>TASLP</b>)</em>, 2020. <br>
-    <p style="margin-top:3px">
-      [PDF]
-    </p>
-  </li>
-  <li>
-      <b>Toward Making the Most of Context in Neural Machine Translation</b>, <br>
-      <u>Zaixiang Zheng</u>, Xiang Yue, Shujian Huang, Jiajun Chen, Alexandra Birch<br>
-      <em>IJCAI-PRICAI</em>, 2020.  <br>
-      <p style="margin-top:3px">
-          [<a href="https://arxiv.org/pdf/2002.07982.pdf">PDF</a>]
-        </p>  
-  </li>
-  <li>
-      <b>Mirror-Generative Neural Machine Translation</b>, <br>
-      <u>Zaixiang Zheng</u>, Hao Zhou, Shujian Huang, Lei Li, Xin-Yu Dai, Jiajun Chen<br>
-      <em>International Conference on Learning Representations (<b>ICLR</b>)</em>, 2020 (oral) <br>
-      <p style="margin-top:3px">
-        [<a href="https://openreview.net/forum?id=HkxQRTNYPH">PDF</a>]
-        [<a href="https://github.com/zhengzx-nlp/MGNMT">Code</a>]
-      </p>  
-  </li>
-  <li>
-      <b>Dynamic Past and Future for Neural Machine Translation</b>, <br>
-      <u>Zaixiang Zheng</u>,  Zhaopeng Tu, Shujian Huang, Xin-Yu Dai, Jiajun Chen<br>
-      <em>Empirical Methods in Natural Language Processing</em> (<b>EMNLP</b>), 2019<br>
-      <p style="margin-top:3px">
-        [<a href="./archive/emnlp2019-dynamic-CR-v1.pdf">PDF</a>]
-        [<a href="https://github.com/zhengzx-nlp/dynamic-nmt">Code</a>]
-      </p>  
-  </li>
-  <li>
-    <b>Modeling Past and Future for Neural Machine Translation</b>, <br>
-    <u>Zaixiang Zheng*</u>, Hao Zhou*, Shujian Huang, Lili Mou, Xin-Yu Dai, Jiajun Chen, Zhaopeng Tu<br>
-    <em>Transactions of the Association of Computational Linguistics</em> (<b>TACL</b>), 2018.  <br>
-    <p style="margin-top:3px">
-      [<a href="https://www.mitpressjournals.org/doi/pdf/10.1162/tacl_a_00011">PDF</a>]
-      [<a href="https://github.com/zhengzx-nlp/past-and-future-nmt">Code</a>]
-    </p>  
-  </li>
-
-</ul>
+        </ul>
 
 
-<!-- <h3>Preprint</h3>
+        <!-- <h3>Preprint</h3>
 <ul>
   <li>
     <b>Learning to Discriminate Noises for Incorporating External Information in Neural Machine Translation</b>, <br>
@@ -158,7 +193,7 @@
 </ul> -->
 
 
-<!-- <h2>Talks</h2>
+        <!-- <h2>Talks</h2>
   <ul>
     <li> Graph Neural Networks. <a href="http://www.research.ibm.com/labs/watson/index.shtml">IBM Thomas J. Watson Research Center</a>, Yorktown Heights, NY, Aug. 9, 2018 </li>
     <li> Graph Neural Networks. <a href="http://www.nec-labs.com/">NEC Labs</a>, Princeton, NJ, Aug. 7, 2018 </li>
@@ -170,27 +205,28 @@
     <li> Deep Learning on Graphs. <a href="http://mlensemble.com/">ML Ensemble</a>, Toronto, ON, Jan. 20, 2018 </li>
   </ul> -->
 
-<!-- <h2>Teaching Activities</h2>
+        <!-- <h2>Teaching Activities</h2>
   <ul>
     <li> Teaching assistant: Elementary Programming, supervised by Shujian Huang (2018 Fall). </li>
     <li> Teaching assistant: Advanced Programming, supervised by Jiajun Chen and Shujian Huang (2017 Fall). </li>
   </ul> -->
-<h2>Academic Activities</h2>
-<ul>
-  <li> Program committee or reviewer: ICLR 2021,2022; NeurIPS 2021; ICML 2022; ACL 2019,2020,2021; EMNLP 2020,2021; AAAI 2020,2021,2022; IJCAI 2020,2021; </li>
-</ul>
+        <h2>Academic Activities</h2>
+        <ul>
+            <li> Program committee or reviewer: TPAMI 2022-now; ICLR 2021,2022; NeurIPS 2021,2022; ICML 2022;
+                ACL/EMNLP/NAACL 2019-now; ARR; AAAI/IJCAI 2020-now; </li>
+        </ul>
 
-<!-- <h2>Services</h2>
+        <!-- <h2>Services</h2>
   <ul>
     <li> Journal Reviewer: <a href="http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=83">IEEE TIP</a>, <a href="http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5962385">IEEE TNNLS</a>, <a href="http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=76">IEEE TCSVT</a>, <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=93">IEEE MM</a>, <a href="https://link.springer.com/journal/11263">IJCV</a>, <a href="https://www.journals.elsevier.com/computer-vision-and-image-understanding/">CVIU</a>, <a href="https://link.springer.com/journal/371">TVCJ</a>  </li> 
     <li> Conference Reviewer: ICLR 2019, CVPR 2019, NIPS 2018, ECCV 2018, UAI 2018, ICML 2018, CVPR 2018, ICLR 2018, AAAI 2018, NIPS 2017, ICML 2017, ICCV 2017, ICLR 2017, NIPS 2016 </li>
   </ul> -->
 
 
-<!-- <h2>Honors &amp; Awards</h2>
+        <!-- <h2>Honors &amp; Awards</h2>
 <table style="border-spacing:2px"> -->
-	
-		<!-- <tr><td><I>ICLR Travel Award</I>, 2017.</td></tr>
+
+        <!-- <tr><td><I>ICLR Travel Award</I>, 2017.</td></tr>
 		<tbody><tr><td><i>Connaught International Scholarship for Doctoral Students</i> (University-wide 20), University of Toronto, 2015.</td></tr>
 
 		<tr><td><i>Departmental Entrance Scholarship</i> (Top %2 applicant), Department of Computer Science, University of Toronto, 2015.</td></tr>
@@ -199,10 +235,10 @@
 
     <tr><td><i>Graduate Scholarship</i>, Department of Computer Science and Engineering, Chinese University of Hong Kong, 2013-2015.</td></tr> -->
 
-		<!-- <tr><td><I>Travel Grant</I>, 11th Asian Conference on Computer Vision, Daejeon, Korea, 2012.</td></tr> -->
+        <!-- <tr><td><I>Travel Grant</I>, 11th Asian Conference on Computer Vision, Daejeon, Korea, 2012.</td></tr> -->
 
-		<!-- <tr><td><I>Student Scholarship</I>, Machine Learning Summer School</a>, Singapore, 2011.</td></tr> -->
-<!-- 
+        <!-- <tr><td><I>Student Scholarship</I>, Machine Learning Summer School</a>, Singapore, 2011.</td></tr> -->
+        <!-- 
 		<tr>
     <td><i>Honorable Mention</i>, Mathematical Contest in Modeling (MCM), 2010, 2011, 2012.</td></tr>
 
@@ -217,13 +253,16 @@
 	</tbody>
 </table> -->
 
-<!-- <h2>Miscellany</h2>
+        <!-- <h2>Miscellany</h2>
 <p>Hobbies: Basketball, Badminton, Reading.</p> -->
 
-<p>Last Updated by Zaixiang: Dec, 2021</p>
-<div id="footer">
-	<div id="footer-text"></div>
-</div>
-</div>
+        <p>Last Updated by Zaixiang: July, 2022</p>
+        <div id="footer">
+            <div id="footer-text"></div>
+        </div>
+    </div>
 
-</body><span class="gr__tooltip"><span class="gr__tooltip-content"></span><i class="gr__tooltip-logo"></i><span class="gr__triangle"></span></span></html>
+</body><span class="gr__tooltip"><span class="gr__tooltip-content"></span><i class="gr__tooltip-logo"></i><span
+        class="gr__triangle"></span></span>
+
+</html>
