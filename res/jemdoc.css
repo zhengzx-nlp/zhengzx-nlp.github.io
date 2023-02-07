@@ -192,6 +192,7 @@ div#footer a {
 div#footer-text {
 	float: left;
 	padding-bottom: 8px;
+    color: #000000;
 }
 
 ul, ol, dl {
