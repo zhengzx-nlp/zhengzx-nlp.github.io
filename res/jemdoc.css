@@ -17,8 +17,12 @@ html {
 	background-color: transparent
 }
 
+b {
+    font-weight: 600;
+  }
+
 body { 
-	font-family: Candara, Calibri, Segoe, Segoe UI, Optima, sans-serif ;
+	font-family: "Gill Sans", Candara, Calibri, Segoe, Segoe UI, Optima, sans-serif ;
 	color: #000;
 	background-color: #ffffff; 
 	text-align:left; /* for IE */
@@ -28,7 +32,7 @@ body {
 	margin-right: auto;
 	padding-left:  50px;
 	padding-right: 50px;
-	padding-top: 10px;
+	padding-top:10px;
 	padding-bottom: 30px;
 	max-width: 960px;
 }
@@ -144,6 +148,7 @@ h1, h2, h3 {
 	line-height: 1.0;
 	padding-top: 0.5em;
 	border-bottom: 1px solid #aaaaaa;
+    font-weight: 600;
 }
 
 h1 {
