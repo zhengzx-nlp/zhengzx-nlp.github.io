@@ -379,3 +379,15 @@ table.imgtable, table.imgtable td {
     border: none;
     text-align: left;
 }
+
+figure {
+    text-align: center;
+    margin: auto; 
+    margin-top: 3em;
+}
+
+figcaption {
+    font-size: small;
+    color: #666;
+    font-style: italic; 
+}
