@@ -21,6 +21,9 @@ b {
     font-weight: 600;
   }
 
+:lang(zh) {
+    font-family: "kaiti"
+}
 body { 
 	font-family: "Gill Sans", Candara, Calibri, Segoe, Segoe UI, Optima, sans-serif ;
 	color: #000;
@@ -234,6 +237,7 @@ p + ul, p + ol {
 
 li {
 	margin-top:0.5em;
+    margin-right: 1.5em;
 }
 
 ol {
