@@ -8,11 +8,13 @@
   --surface: #ffffff;
   --surface-soft: #f3efe8;
   --border: #e6e1d6;
+  --border-soft: #ede9e0;
   --text: #1f2328;
   --text-soft: #555c66;
   --muted: #8a8f98;
   --accent: #7c3f58;          /* plum / burgundy */
   --accent-soft: #c58ba1;
+  --accent-bg: rgba(124, 63, 88, 0.05);
   --highlight: #a7542e;       /* terracotta */
   --link: #7c3f58;
   --link-hover: #4a2135;
@@ -31,11 +33,13 @@
     --surface: #1b1b21;
     --surface-soft: #24242c;
     --border: #2c2c36;
+    --border-soft: #25252e;
     --text: #e9e7e2;
     --text-soft: #bdbac2;
     --muted: #8a8692;
     --accent: #d49ab0;
     --accent-soft: #a46b82;
+    --accent-bg: rgba(212, 154, 176, 0.08);
     --highlight: #e0a07b;
     --link: #d49ab0;
     --link-hover: #eac3d0;
@@ -231,9 +235,20 @@ li { margin: 4px 0; }
 }
 .pub-list { list-style: none; padding: 0; }
 .pub-list > li {
-  margin: 14px 0;
-  padding-left: 0;
+  margin: 0;
+  padding: 16px 10px 16px 12px;
+  border-top: 1px solid var(--border-soft);
+  border-left: 3px solid transparent;
+  border-radius: 4px;
+  transition: background 0.15s ease, border-left-color 0.15s ease, transform 0.15s ease;
 }
+.pub-list > li:first-child { border-top: none; }
+.pub-list > li:hover {
+  background: var(--accent-bg);
+  border-left-color: var(--accent-soft);
+  transform: translateX(2px);
+}
+.pub-list > li > div + div { margin-top: 3px; }
 .pub-title { font-weight: 600; color: var(--text); }
 .pub-authors { color: var(--text-soft); font-size: 0.92rem; }
 .pub-authors .me { color: var(--text); border-bottom: 1px solid var(--accent-soft); }
@@ -355,6 +370,8 @@ li { margin: 4px 0; }
 
   /* Publications: avoid long arXiv ids forcing horizontal scroll */
   .pub-authors, .pub-venue { overflow-wrap: anywhere; }
+  .pub-list > li { padding: 14px 8px 14px 10px; }
+  .pub-list > li:hover { transform: none; }
 }
 
 /* Phone portrait — aggressive compaction */
