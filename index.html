@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Zaixiang Zheng" />
+    <meta name="description" content="Zaixiang Zheng — Research Scientist at ByteDance Seed, working on multimodal foundation models and generative AI for language &amp; life sciences." />
+    <meta name="keywords" content="Zaixiang Zheng, 郑在翔, ByteDance, Seed, AI for Science, DPLM, protein language model, diffusion language model, dLLM, generative AI, machine translation, LLM" />
+    <title>Zaixiang Zheng (郑在翔) — Homepage</title>
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ctext y='20' font-size='22'%3E%F0%9F%A7%AC%3C/text%3E%3C/svg%3E" />
+
+    <!-- Google Analytics (legacy, inherited from old homepage for continuity) -->
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () { (i[r].q = i[r].q || []).push(arguments) };
+            i[r].l = 1 * new Date();
+            a = s.createElement(o); m = s.getElementsByTagName(o)[0];
+            a.async = 1; a.src = g; m.parentNode.insertBefore(a, m);
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-99569700-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- ===================== HEADER ===================== -->
+    <header class="header">
+        <div class="identity">
+            <h1>Zaixiang Zheng <span class="name-cn">郑在翔</span></h1>
+            <p class="role">Research Scientist · ByteDance Seed · AGI · AI for Science</p>
+
+            <ul class="contact-list">
+                <li><span class="icon">✉</span><a href="mailto:zhengzaixiang@bytedance.com">zhengzaixiang [at] bytedance.com</a></li>
+                <li><span class="icon">✉</span><a href="mailto:zaixiang.zheng@gmail.com">zaixiang.zheng [at] gmail.com</a></li>
+                <li><span class="icon">🎓</span><a href="https://scholar.google.com/citations?user=JPSrehMAAAAJ&hl=en">Google Scholar</a></li>
+                <li><span class="icon">🐙</span><a href="https://github.com/zhengzx-nlp">GitHub</a></li>
+                <li><span class="icon">🏠</span><a href="https://bytedance.github.io/dplm">DPLM Project</a></li>
+            </ul>
+
+            <p class="note">
+                Please reach out via my personal email if I don't respond promptly elsewhere.
+            </p>
+        </div>
+
+        <div class="avatar-wrapper">
+            <figure style="margin:0; text-align:center;">
+                <img class="avatar" src="assets/avatar.jpg" alt="Zaixiang Zheng" />
+                <figcaption class="avatar-caption">Millennium Bridge, London, 2020.</figcaption>
+            </figure>
+        </div>
+    </header>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section id="about">
+        <h2>About</h2>
+        <p>
+            I build <strong>multimodal foundation models</strong> and <strong>generative AI systems</strong> for
+            language intelligence and life sciences, spanning scalable generative modeling
+            (<em>e.g.,</em> LLMs &amp; diffusion), post-training &amp; alignment, and fast, steerable inference.
+        </p>
+        <p>
+            I am currently a research lead at
+            <a href="https://seed.bytedance.com/en/">ByteDance Seed — AI for Science</a>, working with
+            <a href="http://web.cs.ucla.edu/~qgu/">Prof. Quanquan Gu</a>, where I lead the research and development of
+            <strong>multimodal generative biomolecular foundation models</strong> — delivering the
+            <strong>DPLM</strong> family of multimodal diffusion protein language models, and applying generative
+            protein design to antibody design at all-atom resolution with energy-based preference alignment.
+            I also pioneered <strong>diffusion language models (dLLMs)</strong> and built the first 10B-scale dLLM
+            back in mid-2023.
+        </p>
+        <p>
+            🚀 To learn more about our research roadmap, visit our project page at
+            <a href="https://bytedance.github.io/dplm">https://bytedance.github.io/dplm</a>.
+        </p>
+        <p>
+            Before joining ByteDance, I completed my five-year Ph.D. in Computer Science at
+            <a href="http://nlp.nju.edu.cn/">NJUNLP Lab, Nanjing University</a> (2016–2021), advised by
+            <a href="https://cs.nju.edu.cn/chenjiajun/index_en.htm">Prof. Jiajun Chen</a> and
+            <a href="http://nlp.nju.edu.cn/huangsj/">Prof. Shujian Huang</a>.
+            During my Ph.D., I spent a wonderful year at
+            <a href="https://edinburghnlp.inf.ed.ac.uk/">ILCC, University of Edinburgh</a> with
+            <a href="http://homepages.inf.ed.ac.uk/abmayne/">Prof. Alexandra Birch</a> (2019–2020), and interned at
+            ByteDance AI Lab with
+            <a href="https://zhouh.github.io/">Prof. Hao Zhou</a> and
+            <a href="https://lileicc.github.io/">Prof. Lei Li</a> (2020–2021).
+        </p>
+    </section>
+
+    <!-- ===================== RESEARCH HIGHLIGHTS ===================== -->
+    <section id="highlights">
+        <h2>Research Highlights</h2>
+        <!-- <p>
+            A coherent thread from <em>non-autoregressive &amp; diffusion sequence generation</em> to
+            <em>multimodal protein foundation models</em> and <em>aligned generative design</em>.
+        </p> -->
+
+        <div class="cards">
+
+            <div class="card">
+                <span class="card-tag">Protein LM for Design</span>
+                <h3>LM-<span class="small-caps">Design</span></h3>
+                <p>
+                    The first reprogramming of pre-trained protein LMs into structure-conditioned masked diffusion
+                    for protein sequence design — +10–15% over prior SOTA.
+                </p>
+                <div class="card-links">
+                    <a href="https://arxiv.org/abs/2302.01649">ICML'23 Oral</a>
+                    <a href="https://github.com/BytedProtein/ByProt">Code</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <span class="card-tag">DPLM Family</span>
+                <h3>DPLM · DPLM-2 · DPLM-2.1 · DPLM-Evo</h3>
+                <p>
+                    A unified, multimodal protein foundation built from discrete diffusion — scaling from sequence
+                    to sequence+structure, with bit-based tokens, flow-based decoding, and evolutionary edit-based
+                    diffusion (substitutions / insertions / deletions).
+                </p>
+                <div class="card-links">
+                    <a href="https://arxiv.org/abs/2402.18567">DPLM</a>
+                    <a href="https://arxiv.org/abs/2410.13782">DPLM-2</a>
+                    <a href="https://arxiv.org/abs/2504.11454">DPLM-2.1</a>
+                    <a href="https://arxiv.org/abs/2605.00182">DPLM-Evo</a>
+                    <a href="https://bytedance.github.io/dplm">Project</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <span class="card-tag">Steerable Generative Protein Design</span>
+                <h3>AbDPO · APM · PAR</h3>
+                <p>
+                    Fast and steerable protein generation for antibody &amp; complex design — energy-based preference
+                    optimization, all-atom generative complex modeling, and the first multiscale autoregressive structure
+                    generator with 2.5× faster sampling.
+                </p>
+                <div class="card-links">
+                    <a href="https://arxiv.org/abs/2403.16576">AbDPO</a>
+                    <a href="https://arxiv.org/abs/2504.13075">APM</a>
+                    <a href="https://arxiv.org/abs/2602.04883">PAR</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <span class="card-tag">dLLM Pioneer</span>
+                <h3>Diffusion-LLM · DINOISER</h3>
+                <p>
+                    The first 10B-scale discrete diffusion language model demonstrating scaling &amp; instruction
+                    finetuning, and principled noise manipulation for Gaussian text diffusion.
+                </p>
+                <div class="card-links">
+                    <a href="https://arxiv.org/abs/2308.12219">Diffusion-LLM</a>
+                    <a href="https://arxiv.org/abs/2302.10025">DINOISER</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <span class="card-tag">Benchmark</span>
+                <h3>ProteinBench</h3>
+                <p>
+                    A unified task taxonomy and multi-axis evaluation (quality / novelty / diversity / robustness)
+                    of protein foundation models with transparent tooling.
+                </p>
+                <div class="card-links">
+                    <a href="https://arxiv.org/abs/2409.06744">arXiv</a>
+                    <a href="https://proteinbench.github.io/">Project</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <span class="card-tag">NMT · Generaive Models · Pre-LLM Era</span>
+                <h3>MGNMT · REDER · Volctrans GLAT</h3>
+                <p>
+                    Mirror-generative translation (ICLR 2020 Oral, 8/8/8), duplex reversible seq2seq
+                    (NeurIPS 2021), and the non-autoregressive system that ranked #1 at WMT 2021 De→En.
+                </p>
+                <div class="card-links">
+                    <a href="https://openreview.net/forum?id=HkxQRTNYPH">MGNMT</a>
+                    <a href="https://arxiv.org/abs/2109.11247">Volctrans GLAT</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== NEWS ===================== -->
+    <section id="news">
+        <h2>News</h2>
+        <div class="news">
+            <ul>
+                <li><span class="date">Apr 2026</span> <a href="https://arxiv.org/abs/2605.00182">DPLM-Evo</a> and <a href="https://arxiv.org/abs/2602.04883">PAR</a> are accepted to <strong>ICML 2026</strong>. Congrats to the team — see you in Seoul!</li>
+                <li><span class="date">May 2025</span> <a href="https://arxiv.org/abs/2504.13075">APM</a> and <a href="https://arxiv.org/abs/2504.11454">DPLM-2.1</a> (Spotlight) are accepted to <strong>ICML 2025</strong>.</li>
+                <li><span class="date">Apr 2025</span> Serving as an <strong>Area Chair for NeurIPS 2025</strong>.</li>
+                <li><span class="date">Jan 2025</span> <a href="https://arxiv.org/abs/2410.13782">DPLM-2</a> and <a href="https://arxiv.org/abs/2409.06744">ProteinBench</a> are accepted to <strong>ICLR 2025</strong>. DPLM-2 is a ByteDance ICLR 2025 Research Highlight.</li>
+                <li><span class="date">May 2024</span> <a href="https://arxiv.org/abs/2402.18567">DPLM</a> — a versatile diffusion protein foundation model — is accepted to <strong>ICML 2024</strong>. Invited talk at the <a href="https://www.ml4proteinengineering.com/may-28">ML for Protein Engineering</a> seminar.</li>
+                <li><span class="date">Apr 2024</span> <a href="https://arxiv.org/abs/2302.10025">DINOISER</a> is accepted to <strong>TACL</strong>; also selected as an oral at <strong>ACL 2024</strong>.</li>
+                <li><span class="date">Jan 2024</span> Serving as an Area Chair for <strong>ACL 2024</strong>.</li>
+                <li><span class="date">Dec 2023</span> Serving as an Area Chair for <strong>NAACL 2024</strong>.</li>
+                <li><span class="date">Nov 2023</span> Invited talk about LM-<small>DESIGN</small> at the <a href="https://www.ml4proteinengineering.com/nov-28">ML for Protein Engineering</a> seminar.</li>
+                <li><span class="date">Oct 2023</span> Serving as an Area Chair for <strong>EACL 2024</strong>.</li>
+                <li><span class="date">May–Oct 2023</span> Invited talks on <em>deep generative sequence modeling for human languages and proteins</em> at UC Santa Barbara, Tongji Univ., <a href="https://www.techbeat.net/talk-info?id=778">TechBeat</a>, <a href="https://www.bilibili.com/video/BV1814y1o7cL?p=1">MLNLP seminar</a>, IWNLG and SUFE.</li>
+                <li><span class="date">Apr 2023</span> <em>Deep Equilibrium Non-autoregressive Sequence Learning</em> is accepted to Findings of <strong>ACL 2023</strong>.</li>
+                <li><span class="date">Apr 2023</span> <a href="https://arxiv.org/abs/2302.01649">LM-Design</a> is accepted to <strong>ICML 2023</strong> as an oral presentation.</li>
+                <li><span class="date">Nov 2022</span> Received the <strong>CIPS Best Doctoral Dissertation Award</strong>.</li>
+                <li><span class="date">Jul 2022</span> Our <strong>LAFT</strong> paper received the <strong>Best Short-Paper Award</strong> at INLG 2022.</li>
+                <li><span class="date">Oct 2021</span> <a href="https://arxiv.org/abs/2109.11247">REDER</a> is accepted to <strong>NeurIPS 2021</strong>.</li>
+                <li><span class="date">Jul 2021</span> Joined ByteDance as a research scientist.</li>
+                <li><span class="date">Jun 2021</span> Passed my viva and received the Ph.D. degree.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ===================== PUBLICATIONS ===================== -->
+    <section id="publications">
+        <h2>Selected Publications</h2>
+        <p class="pub-legend">
+            <a href="https://scholar.google.com/citations?user=JPSrehMAAAAJ&hl=en">[Google Scholar full list]</a>
+            &nbsp;·&nbsp;
+            <span class="lead">†</span> project (co-)lead,
+            <span class="equal">*</span> equal contribution,
+            <span class="intern">‡</span> student/intern I mentored.
+        </p>
+
+        <ol class="pub-list">
+
+            <li>
+                <div class="pub-title">Towards a Generative Evolution Machine with DPLM-Evo</div>
+                <div class="pub-authors">
+                    Xinyou Wang<span class="equal">*</span><span class="intern">‡</span>,
+                    Liang Hong<span class="equal">*</span><span class="intern">‡</span>,
+                    Jiasheng Ye<span class="intern">‡</span>,
+                    <span class="me">Zaixiang Zheng</span><span class="lead">†</span>,
+                    Yu Li, Shujian Huang, Quanquan Gu.
+                </div>
+                <div class="pub-venue"><span class="venue-name">ICML 2026</span>. arXiv:2605.00182.</div>
+                <div class="pub-links">
+                    [<a href="https://arxiv.org/abs/2605.00182">arXiv</a>]
+                    [<a href="https://bytedance.github.io/dplm">Project</a>]
+                </div>
+            </li>
+
+            <li>
+                <div class="pub-title">Protein Autoregressive Modeling via Multiscale Structure Generation</div>
+                <div class="pub-authors">
+                    Yanru Qu<span class="equal">*</span><span class="intern">‡</span>,
+                    Cheng-Yen Hsieh<span class="equal">*</span>,
+                    <span class="me">Zaixiang Zheng</span>,
+                    Ge Liu, Quanquan Gu.
+                </div>
+                <div class="pub-venue"><span class="venue-name">ICML 2026</span> <span class="pub-badge badge-spot">Spotlight</span>. arXiv:2602.04883.</div>
+                <div class="pub-links">
+                    [<a href="https://arxiv.org/abs/2602.04883">arXiv</a>]
+                    [<a href="https://par-protein.github.io/">Project</a>]
+                </div>
+            </li>
+
+            <li>
+                <div class="pub-title">An All-atom Protein Generative Model for Designing Protein Complexes</div>
+                <div class="pub-authors">
+                    Ruizhe Chen<span class="equal">*</span><span class="intern">‡</span>,
+                    Dongyu Xue<span class="equal">*</span>,
+                    Xiangxin Zhou<span class="intern">‡</span>,
+                    <span class="me">Zaixiang Zheng</span>,
+                    Xiangxiang Zeng, Quanquan Gu.
+                </div>
+                <div class="pub-venue"><span class="venue-name">ICML 2025</span>. arXiv:2504.13075.</div>
+                <div class="pub-links">
+                    [<a href="https://arxiv.org/abs/2504.13075">arXiv</a>]
+                </div>
+            </li>
+
+            <li>
+                <div class="pub-title">Elucidating the Design Space of Multimodal Protein Language Models</div>
+                <div class="pub-authors">
+                    Cheng-Yen Hsieh<span class="equal">*</span>,
+                    Xinyou Wang<span class="equal">*</span><span class="intern">‡</span>,
+                    Daiheng Zhang<span class="intern">‡</span>,
+                    Dongyu Xue, Fei Ye, Shujian Huang,
+                    <span class="me">Zaixiang Zheng</span><span class="lead">†</span>,
+                    Quanquan Gu.
+                </div>
+                <div class="pub-venue"><span class="venue-name">ICML 2025</span> <span class="pub-badge badge-spot">Spotlight</span>. arXiv:2504.11454.</div>
+                <div class="pub-links">
+                    [<a href="https://arxiv.org/abs/2504.11454">arXiv</a>]
+                    [<a href="https://bytedance.github.io/dplm/dplm-2.1">Project</a>]
+                    [<a href="https://github.com/bytedance/dplm">Code</a>]
+                </div>
+            </li>
+
+            <li>
+                <div class="pub-title">DPLM-2: A Multimodal Diffusion Protein Language Model</div>
+                <div class="pub-authors">
+                    Xinyou Wang<span class="intern">‡</span>,
+                    <span class="me">Zaixiang Zheng</span><span class="lead">†</span>,
+                    Fei Ye, Dongyu Xue, Shujian Huang, Quanquan Gu.
+                </div>
+                <div class="pub-venue"><span class="venue-name">ICLR 2025</span> <span class="pub-badge badge-hl">ByteDance Highlight</span>. arXiv:2410.13782.</div>
+                <div class="pub-links">
+                    [<a href="https://arxiv.org/abs/2410.13782">arXiv</a>]
+                    [<a href="https://bytedance.github.io/dplm/dplm-2">Project</a>]
+                    [<a href="https://github.com/bytedance/dplm">Code</a>]
+                </div>
+            </li>
+
+            <li>
+                <div class="pub-title">ProteinBench: A Holistic Evaluation of Protein Foundation Models</div>
+                <div class="pub-authors">
+                    Fei Ye<span class="equal">*</span>,
+                    <span class="me">Zaixiang Zheng</span><span class="equal">*</span>,
+                    Dongyu Xue<span class="equal">*</span>,
+                    Yuning Shen<span class="equal">*</span>,
+                    Lihao Wang<span class="equal">*</span>,
+                    Yiming Ma, Yan Wang, Xinyou Wang, Xiangxin Zhou, Quanquan Gu.
+                </div>
+                <div class="pub-venue"><span class="venue-name">ICLR 2025</span>. arXiv:2409.06744.</div>
+                <div class="pub-links">
+                    [<a href="https://arxiv.org/abs/2409.06744">arXiv</a>]
+                    [<a href="https://proteinbench.github.io/">Project</a>]
+                </div>
+            </li>
+
+            <li>
+                <div class="pub-title">Antigen-Specific Antibody Design via Direct Energy-based Preference Optimization</div>
+                <div class="pub-authors">
+                    Xiangxin Zhou<span class="equal">*</span><span class="intern">‡</span>,
+                    Dongyu Xue<span class="equal">*</span>,
+                    Ruizhe Chen<span class="equal">*</span><span class="intern">‡</span>,
+                    <span class="me">Zaixiang Zheng</span>,
+                    Liang Wang, Quanquan Gu.
+                </div>
+                <div class="pub-venue"><span class="venue-name">NeurIPS 2024</span>. arXiv:2403.16576.</div>
+                <div class="pub-links">
+                    [<a href="https://arxiv.org/abs/2403.16576">arXiv</a>]
+                </div>
+            </li>
+
+            <li>
+                <div class="pub-title">Diffusion Language Models Are Versatile Protein Learners</div>
+                <div class="pub-authors">
+                    Xinyou Wang<span class="equal">*</span><span class="intern">‡</span>,
+                    <span class="me">Zaixiang Zheng</span><span class="equal">*</span><span class="lead">†</span>,
+                    Fei Ye, Dongyu Xue, Shujian Huang, Quanquan Gu.
+                </div>
+                <div class="pub-venue"><span class="venue-name">ICML 2024</span> <span class="pub-badge badge-hl">ByteDance Highlight</span>. arXiv:2402.18567.</div>
+                <div class="pub-links">
+                    [<a href="https://arxiv.org/pdf/2402.18567.pdf">arXiv</a>]
+                    [<a href="https://github.com/bytedance/dplm">Code</a>]
+                </div>
+            </li>
+
+            <li>
+                <div class="pub-title">Diffusion Language Models Can Perform Many Tasks with Scaling and Instruction-Finetuning</div>
+                <div class="pub-authors">
+                    Jiasheng Ye<span class="intern">‡</span>,
+                    <span class="me">Zaixiang Zheng</span><span class="lead">†</span>,
+                    Yu Bao, Lihua Qian, Quanquan Gu.
+                </div>
+                <div class="pub-venue"><span class="venue-name">Preprint, arXiv:2308.12219</span>. <em>The first exploration of dLLM above 10B with discrete diffusion.</em></div>
+                <div class="pub-links">
+                    [<a href="https://arxiv.org/abs/2308.12219">arXiv</a>]
+                    [<a href="https://github.com/yegcjs/DiffusionLLM">Code</a>]
+                </div>
+            </li>
+
+            <li>
+                <div class="pub-title">Structure-informed Language Models Are Protein Designers</div>
+                <div class="pub-authors">
+                    <span class="me">Zaixiang Zheng</span><span class="equal">*</span><span class="lead">†</span>,
+                    Yifan Deng<span class="equal">*</span><span class="intern">‡</span>,
+                    Dongyu Xue, Yi Zhou, Fei Ye, Quanquan Gu.
+                </div>
+                <div class="pub-venue"><span class="venue-name">ICML 2023</span> <span class="pub-badge badge-oral">Oral</span>. arXiv:2302.01649.</div>
+                <div class="pub-links">
+                    [<a href="https://arxiv.org/abs/2302.01649">arXiv</a>]
+                    [<a href="https://github.com/BytedProtein/ByProt">Code</a>]
+                </div>
+            </li>
+
+            <li>
+                <div class="pub-title">DINOISER: Diffused Conditional Sequence Learning by Manipulating Noises</div>
+                <div class="pub-authors">
+                    Jiasheng Ye<span class="intern">‡</span>,
+                    <span class="me">Zaixiang Zheng</span><span class="lead">†</span>,
+                    Yu Bao, Lihua Qian, Mingxuan Wang.
+                </div>
+                <div class="pub-venue"><span class="venue-name">TACL 2024</span> <span class="pub-badge badge-oral">Oral @ ACL 2024</span> <span class="pub-badge badge-hl">ByteDance Highlight</span>. arXiv:2302.10025.</div>
+                <div class="pub-links">
+                    [<a href="https://arxiv.org/abs/2302.10025">arXiv</a>]
+                    [<a href="https://github.com/yegcjs/DINOISER">Code</a>]
+                </div>
+            </li>
+
+            <li>
+                <div class="pub-title">Deep Equilibrium Non-autoregressive Sequence Learning</div>
+                <div class="pub-authors">
+                    <span class="me">Zaixiang Zheng</span>, Yi Zhou, Hao Zhou.
+                </div>
+                <div class="pub-venue"><span class="venue-name">ACL 2023</span>.</div>
+                <div class="pub-links">
+                    [<a href="https://aclanthology.org/2023.findings-acl.747.pdf">Paper</a>]
+                </div>
+            </li>
+
+            <li>
+                <div class="pub-title">LAFT: Cross-lingual Transfer for Text Generation by Language-Agnostic Finetuning</div>
+                <div class="pub-authors">
+                    Xianze Wu<span class="intern">‡</span>,
+                    <span class="me">Zaixiang Zheng</span><span class="lead">†</span>,
+                    Hao Zhou, Yong Yu.
+                </div>
+                <div class="pub-venue"><span class="venue-name">INLG 2022</span> <span class="pub-badge badge-oral">Oral</span> <span class="pub-badge badge-best">Best Short-Paper</span>.</div>
+                <div class="pub-links">
+                    [<a href="https://inlgmeeting.github.io/poster_paper25.html">Paper</a>]
+                </div>
+            </li>
+
+            <li>
+                <div class="pub-title">The Volctrans GLAT System: Non-autoregressive Translation Meets WMT 2021</div>
+                <div class="pub-authors">
+                    Lihua Qian<span class="equal">*</span>,
+                    Yi Zhou<span class="equal">*</span>,
+                    <span class="me">Zaixiang Zheng</span><span class="equal">*</span>,
+                    Yaoming Zhu, Zehui Lin, Jiangtao Feng, Shanbo Cheng, Lei Li, Mingxuan Wang, Hao Zhou.
+                </div>
+                <div class="pub-venue"><span class="venue-name">WMT 2021</span> — <em> <span class="pub-badge badge-hl">Rank #1</span> on German→English, beating strong autoregressive systems.</em></div>
+                <div class="pub-links">
+                    [<a href="https://arxiv.org/abs/2109.11247">arXiv</a>]
+                    [<a href="https://github.com/bytedance/ParaGen">Code</a>]
+                </div>
+            </li>
+
+            <li>
+                <div class="pub-title">Duplex Sequence-to-Sequence Learning for Reversible Machine Translation</div>
+                <div class="pub-authors">
+                    <span class="me">Zaixiang Zheng</span>, Hao Zhou, Shujian Huang, Jiajun Chen, Jingjing Xu, Lei Li.
+                </div>
+                <div class="pub-venue"><span class="venue-name">NeurIPS 2021</span>.</div>
+                <div class="pub-links">
+                    [<a href="https://proceedings.neurips.cc/paper/2021/file/afecc60f82be41c1b52f6705ec69e0f1-Paper.pdf">Paper</a>]
+                    [<a href="https://github.com/zhengzx-nlp/REDER">Code</a>]
+                </div>
+            </li>
+
+            <li>
+                <div class="pub-title">Vocabulary Learning via Optimal Transport for Neural Machine Translation</div>
+                <div class="pub-authors">
+                    Jingjing Xu, Hao Zhou, Chun Gan, <span class="me">Zaixiang Zheng</span>, Lei Li.
+                </div>
+                <div class="pub-venue"><span class="venue-name">ACL 2021</span> <span class="pub-badge badge-oral">Oral</span> <span class="pub-badge badge-best">Best Paper</span>.</div>
+                <div class="pub-links">
+                    [<a href="https://aclanthology.org/2021.acl-long.571/">Paper</a>]
+                    [<a href="https://github.com/Jingjing-NLP/VOLT">Code</a>]
+                </div>
+            </li>
+
+            <li>
+                <div class="pub-title">Improving Self-Attention Networks with Sequential Relations</div>
+                <div class="pub-authors">
+                    <span class="me">Zaixiang Zheng</span>, Shujian Huang, Rongxiang Weng, Xin-Yu Dai, Jiajun Chen.
+                </div>
+                <div class="pub-venue"><span class="venue-name">IEEE/ACM TASLP 2020</span>.</div>
+                <div class="pub-links">
+                    [<a href="https://ieeexplore.ieee.org/abstract/document/9099090/">Paper</a>]
+                </div>
+            </li>
+
+            <li>
+                <div class="pub-title">Towards Making the Most of Context in Neural Machine Translation</div>
+                <div class="pub-authors">
+                    <span class="me">Zaixiang Zheng</span><span class="equal">*</span>,
+                    Xiang Yue<span class="equal">*</span><span class="intern">‡</span>,
+                    Shujian Huang, Jiajun Chen, Alexandra Birch.
+                </div>
+                <div class="pub-venue"><span class="venue-name">IJCAI 2020</span> <span class="pub-badge badge-oral">Oral</span>.</div>
+                <div class="pub-links">
+                    [<a href="https://arxiv.org/pdf/2002.07982.pdf">arXiv</a>]
+                    [<a href="https://github.com/Blickwinkel1107/making-the-most-of-context-nmt">Code</a>]
+                </div>
+            </li>
+
+            <li>
+                <div class="pub-title">Mirror-Generative Neural Machine Translation</div>
+                <div class="pub-authors">
+                    <span class="me">Zaixiang Zheng</span>, Hao Zhou, Shujian Huang, Lei Li, Xin-Yu Dai, Jiajun Chen.
+                </div>
+                <div class="pub-venue"><span class="venue-name">ICLR 2020</span> <span class="pub-badge badge-oral">Oral (8/8/8)</span>.</div>
+                <div class="pub-links">
+                    [<a href="https://openreview.net/forum?id=HkxQRTNYPH">Paper</a>]
+                    [<a href="https://github.com/zhengzx-nlp/MGNMT">Code</a>]
+                </div>
+            </li>
+
+            <li>
+                <div class="pub-title">Dynamic Past and Future for Neural Machine Translation</div>
+                <div class="pub-authors">
+                    <span class="me">Zaixiang Zheng</span>, Zhaopeng Tu, Shujian Huang, Xin-Yu Dai, Jiajun Chen.
+                </div>
+                <div class="pub-venue"><span class="venue-name">EMNLP 2019</span>.</div>
+                <div class="pub-links">
+                    [<a href="assets/emnlp2019-dynamic-CR-v1.pdf">Paper</a>]
+                    [<a href="https://github.com/zhengzx-nlp/dynamic-nmt">Code</a>]
+                </div>
+            </li>
+
+            <li>
+                <div class="pub-title">Modeling Past and Future for Neural Machine Translation</div>
+                <div class="pub-authors">
+                    <span class="me">Zaixiang Zheng</span><span class="equal">*</span>,
+                    Hao Zhou<span class="equal">*</span>,
+                    Shujian Huang, Lili Mou, Xin-Yu Dai, Jiajun Chen, Zhaopeng Tu.
+                </div>
+                <div class="pub-venue"><span class="venue-name">TACL 2018</span> (presented at ACL 2018).</div>
+                <div class="pub-links">
+                    [<a href="https://www.mitpressjournals.org/doi/pdf/10.1162/tacl_a_00011">Paper</a>]
+                    [<a href="https://github.com/zhengzx-nlp/past-and-future-nmt">Code</a>]
+                </div>
+            </li>
+
+        </ol>
+    </section>
+
+    <!-- ===================== AWARDS & TALKS ===================== -->
+    <section id="awards-talks">
+        <h2>Awards &amp; Talks</h2>
+
+        <h3>Awards</h3>
+        <ul>
+            <li><strong>CIPS Best Doctoral Dissertation Award</strong>, Chinese Information Processing Society of China (中国中文信息学会优秀博士论文奖), 2022.</li>
+            <li><strong>Best Paper Award</strong>, ACL 2021 — <em>Vocabulary Learning via Optimal Transport for NMT</em>.</li>
+            <li><strong>Best Short-Paper Award</strong>, INLG 2022 — <em>LAFT: Cross-lingual Transfer for Text Generation</em>.</li>
+            <li><strong>WMT 2021 Shared Task — 1st Place on German→English</strong>, with the Volctrans GLAT non-autoregressive translation system.</li>
+            <li>ByteDance ICLR 2025 Research Highlight.</li>
+            <li>ByteDance ICML 2024 Research Highlight.</li>
+            <li>ByteDance ACL 2024 Research Highlight.</li>
+            <!-- <li>ICML 2023 Oral — <em>LM-DESIGN</em>; ACL 2024 Oral — <em>DINOISER</em>; ICML 2025 Spotlight — <em>DPLM-2.1</em>; ICML 2026 Spotlight — <em>PAR</em>.</li> -->
+        </ul>
+
+        <h3>Invited Talks (selected)</h3>
+        <ul>
+            <li>
+                <em>Towards Multimodal Generative Protein Modeling and Design</em>, 2025 —
+                AI4Protein Seminar; AIBC 2025; Shanghai Jiao Tong University; National University of Singapore;
+                <strong>ByteDance Lightning Talk</strong> at ByteDance Booths, ICLR 2025 &amp; ICML 2025.
+            </li>
+            <li>
+                <em>Towards Generative Protein Modeling and Design</em>, 2024 —
+                <a href="https://www.ml4proteinengineering.com/may-28">ML for Protein Engineering Seminar</a>;
+                AICon 2024; CIPS YSSNLP 2024.
+            </li>
+            <li><em>Deep generative sequence modeling for human languages and proteins</em>, May–Oct 2023 —
+                UC Santa Barbara; Tongji University; <a href="https://www.techbeat.net/talk-info?id=778">TechBeat</a>;
+                <a href="https://www.bilibili.com/video/BV1814y1o7cL?p=1">MLNLP seminar</a>; IWNLG; Shanghai University of Finance and Economics.
+            </li>
+            <li><em>LM-Design</em>, 2023 — <a href="https://www.ml4proteinengineering.com/nov-28">ML for Protein Engineering Seminar</a>.</li>
+            <li><em>Deep generative modeling for natural languages</em>, 2022 — FudanNLP.</li>
+        </ul>
+    </section>
+
+    <!-- ===================== SERVICES ===================== -->
+    <section id="services">
+        <h2>Academic Services</h2>
+        <ul>
+            <li><strong>Area Chair:</strong> NeurIPS 2025–present; ICLR/ICML 2026–present; ACL / EMNLP / NAACL / EACL 2023–2025.</li>
+            <li><strong>Conference Reviewer:</strong> ICLR / NeurIPS 2021–present; ICML 2022–present; ACL / EMNLP / NAACL 2019–2023; ARR 2021–2023; AAAI / IJCAI 2020–present.</li>
+            <li><strong>Journal Reviewer:</strong> TPAMI 2022–present; JMLR 2024–present.</li>
+            <li>Program Committee Member of AAAI 2023 Doctoral Consortium.</li>
+        </ul>
+    </section>
+
+    <!-- ===================== MENTORING ===================== -->
+    <section id="mentoring" class="mentoring">
+        <h2>Mentoring</h2>
+        <p>I am fortunate and grateful to work with the following talented students and interns:</p>
+        <ul>
+            <li><span class="name">Jiasheng Ye</span> — BS @ Nanjing Univ. → MS @ Fudan Univ. <span class="proj">(2022–2023, 2025–now; DINOISER / Diffusion-LLM / DPLM-Evo)</span></li>
+            <li><span class="name">Liang Hong</span> — PhD @ CUHK. <span class="proj">(2025–now; DPLM-Evo)</span></li>
+            <li><span class="name">Xinyou Wang</span> — BS / PhD @ Nanjing Univ. <span class="proj">(2023–now; DPLM / DPLM-2 / DPLM-2.1 / DPLM-Evo)</span></li>
+            <li><span class="name">Yanru Qu</span> — PhD @ UIUC. <span class="proj">(2025; PAR)</span></li>
+            <li><span class="name">Ruizhe Chen</span> — MS @ Hunan Univ. <span class="proj">(2025–now; AbDPO / APM)</span></li>
+            <li><span class="name">Daiheng Zhang</span> — MS @ NYU → PhD @ Rutgers. <span class="proj">(2024–2025; DPLM-2.1)</span></li>
+            <li><span class="name">Xiangxin Zhou</span> — PhD @ CASIA. <span class="proj">(2023–2025; AbDPO / APM)</span></li>
+            <li><span class="name">Yifan Deng</span> — MS @ Fudan Univ. → PhD @ UW-Madison. <span class="proj">(2022–2023; LM-DESIGN)</span></li>
+            <li><span class="name">Xianze Wu</span> — MS @ SJTU. <span class="proj">(2021–2022; LAFT)</span></li>
+            <li><span class="name">Xiang Yue</span> — BS @ Nanjing Univ. → MS @ CMU. <span class="proj">(2019–2020; Long-context NMT)</span></li>
+        </ul>
+    </section>
+
+    <!-- ===================== MISC ===================== -->
+    <section id="misc">
+        <h2>Misc.</h2>
+        <ul>
+            <li>A fun fact about me: my name is pronounced roughly as <em>/dʒeng tsai-hsiang/</em> in Mandarin Chinese, which could literally be interpreted as <em>"[I am] flying"</em>.</li>
+        </ul>
+    </section>
+
+    <footer class="footer">
+        Last updated: 2026 · Built with plain HTML/CSS · © Zaixiang Zheng
+    </footer>
+
+    <!-- ClustrMaps visitor counter (inherited from the old homepage so that stats continue) -->
+    <div class="clustrmaps-wrapper" aria-label="Visitors map">
+        <script type="text/javascript" id="clustrmaps"
+            src="//cdn.clustrmaps.com/map_v2.js?cl=111111&w=350&t=m&d=e3JHSjNJ4GVYBV7NaciNlvRw6q1-OuzX0MJ9wK2OE-g&co=ffffff&cmo=5eb5f2&cmn=ff7077&ct=000000"></script>
+    </div>
+
+</div>
+
+</body>
+</html>
