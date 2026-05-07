@@ -260,9 +260,16 @@ li { margin: 4px 0; }
 .badge-best { background: #b88436; color: #fff; }
 .badge-hl   { background: #3b6b52; color: #fff; }
 
-.lead  { color: #7c3f58; font-weight: bold; }
-.equal { color: #1e7c86; font-weight: bold; }
-.intern{ color: #b07a1a; font-weight: bold; }
+.lead, .equal, .intern {
+  vertical-align: super;
+  font-size: 0.72em;
+  font-weight: bold;
+  line-height: 0;                 /* prevent the superscript from enlarging line-height */
+  margin: 0 1px;
+}
+.lead   { color: #7c3f58; }
+.equal  { color: #1e7c86; }
+.intern { color: #b07a1a; }
 
 @media (prefers-color-scheme: dark) {
   .badge-oral { background: #d49ab0; color: #1b1b21; }
