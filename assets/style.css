@@ -249,6 +249,44 @@ li { margin: 4px 0; }
   transform: translateX(2px);
 }
 .pub-list > li > div + div { margin-top: 3px; }
+
+.pub-expand {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.25s ease, margin-top 0.25s ease, opacity 0.2s ease;
+  opacity: 0;
+  margin-top: 0;
+}
+.pub-expand > .pub-expand-inner { overflow: hidden; }
+.pub-list > li:hover > .pub-expand,
+.pub-list > li:focus-within > .pub-expand {
+  grid-template-rows: 1fr;
+  opacity: 1;
+  margin-top: 8px;
+}
+.pub-abstract {
+  font-size: 0.88rem;
+  color: var(--text-soft);
+  line-height: 1.55;
+  margin: 0 0 8px;
+  padding-left: 10px;
+  border-left: 2px solid var(--accent-soft);
+}
+.pub-keywords {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 6px;
+  margin: 0;
+}
+.pub-keywords .kw {
+  font-size: 0.72rem;
+  padding: 1px 8px;
+  border-radius: 999px;
+  background: var(--surface-soft);
+  color: var(--text-soft);
+  border: 1px solid var(--border);
+  letter-spacing: 0.02em;
+}
 .pub-title { font-weight: 600; color: var(--text); }
 .pub-authors { color: var(--text-soft); font-size: 0.92rem; }
 .pub-authors .me { color: var(--text); border-bottom: 1px solid var(--accent-soft); }
